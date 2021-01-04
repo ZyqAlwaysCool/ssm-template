@@ -11,7 +11,7 @@
     <context:component-scan base-package="com.zyq.service"/>
 
     <!--2. 将所有业务类注入到Spring，通过配置或注解实现-->
-    <bean name="BookServiceImpl" class="com.zyq.service.BookServiceImpl">
+    <bean id="BookServiceImpl" class="com.zyq.service.BookServiceImpl">
         <property name="bookMapper" ref="bookMapper"/>
     </bean>
 
